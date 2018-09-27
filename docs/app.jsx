@@ -5,7 +5,6 @@ import injectTapEventPlugin from 'react-tap-event-plugin'
 // http://stackoverflow.com/a/34015469/988941
 injectTapEventPlugin()
 import {ThemeProvider, Footer } from 'ssp-ui'
-import 'typeface-lato'
 import './assets/styles/base'
 import ComponentPageLayout from './src/ComponentPageLayout'
 import Icons from './src/Icons'

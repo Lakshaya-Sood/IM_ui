@@ -89,7 +89,7 @@ var Heather = function (_React$Component) {
           _Toolbar.ToolbarGroup,
           { id: 'fui-heather-brand-logo' },
           _react2.default.createElement(_Brandy2.default, {
-            onLogoClick: props.onLogoClick, height: '40', width: '95' })
+            onLogoClick: props.onLogoClick })
         ),
         _react2.default.createElement(
           _Toolbar.ToolbarGroup,

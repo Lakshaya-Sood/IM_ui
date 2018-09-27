@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {Toolbar, ToolbarGroup} from 'material-ui/Toolbar'
+import { Toolbar, ToolbarGroup } from 'material-ui/Toolbar'
 import { IconButton } from 'material-ui'
 import Brandy from '../Brandy'
 import Profile from '../User.Profile'
-import {FuiTheme} from '../zutils/StyleConfig'
+import { FuiTheme } from '../zutils/StyleConfig'
 import Menu from './Menu'
 
 const style = FuiTheme.heather
@@ -19,21 +19,21 @@ const propTypes = {
 
 const defaultProps = {
   isMenuOpen: false,
-  onMenuClick: () => {},
-  onUserProfileClick: () => {},
-  onLogoClick: () => {},
+  onMenuClick: () => { },
+  onUserProfileClick: () => { },
+  onLogoClick: () => { },
   notificationCount: 0
 }
 
 class Heather extends React.Component {
-  render () {
+  render() {
     const props = this.props
     const headerOptions = {}
 
     return (
       <Toolbar style={style}>
         <ToolbarGroup
-          style={{marginLeft: '-12px'}}
+          style={{ marginLeft: '-12px' }}
           firstChild>
           <Menu
             open={props.isMenuOpen}
@@ -42,14 +42,14 @@ class Heather extends React.Component {
 
         <ToolbarGroup id='fui-heather-brand-logo'>
           <Brandy
-            onLogoClick={props.onLogoClick} />
+            onLogoClick={props.onLogoClick} height={'40'} width={'95'} />
 
         </ToolbarGroup>
 
-        <ToolbarGroup style={{marginRight: '-12px'}}>
+        <ToolbarGroup style={{ marginRight: '-12px' }}>
           <IconButton
             onClick={props.onUserProfileClick}
-            style={{height: '56px', width: '56px'}}>
+            style={{ height: '56px', width: '56px' }}>
             <Profile
               badgeStyle={{
                 width: '16px',
@@ -60,7 +60,7 @@ class Heather extends React.Component {
                 height: '28px'
               }}
               notificationCount={props.notificationCount}
-                />
+            />
           </IconButton>
 
         </ToolbarGroup>
