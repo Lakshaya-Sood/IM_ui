@@ -1,0 +1,206 @@
+/*
+ * ===============================================================
+ *   <FABRIC UI THEME>
+ *   v 0.1 | <Jiten Poddar> | <jiten.poddar@infosys.com>
+ * ===============================================================
+*/
+
+@white:                 #fff;
+
+
+/*BRAND ACCENT COLORS*/
+@brand-yellow-variant1:	#fd9c35;
+@brand-yellow-variant2:	#fbe400;
+
+@brand-blue-variant1:   #1a3b7a;
+@brand-blue-variant2:   #5793f3;
+@brand-blue-variant3:   #0099ff;
+@brand-blue-variant4:   #5677fc;
+
+@brand-grey-variant1:   #fafafa;
+@brand-grey-variant2:   #f1f1f1;
+@brand-grey-variant3:   #f4f4f4;
+
+@brand-green-variant1:  #36a372;
+@brand-green-variant2:  #74ba00;
+
+@brand-red-variant1:    #dd4343;
+
+@brand-orange-variant1: #FF5916;
+@brand-orange-variant2: #F89E5D;
+
+@brand-grey-variant4:   #ecf0f9; /*light bluish grey*/
+
+@brand-white-variant1: #ffffff;
+
+//aliases for core colors
+@brand-info-color                       :@brand-blue-variant3;
+@brand-primary-color                    :@brand-blue-variant1;
+@brand-success-color                    :@brand-green-variant1;
+@brand-success-special-color            :@brand-green-variant2;
+@brand-warning-color                    :@brand-yellow-variant1;
+@brand-danger-color                     :@brand-red-variant1;
+@brand-danger-color2                    :@brand-orange-variant1;
+
+
+@card-footer-bg                         : #F7F8F9;
+//app header vars
+@brand-header							              :	@brand-primary-color;
+
+//sidebar vars
+@brand-sidebar							            :	@brand-primary-color;
+@brand-sidebar-close-icon               : @white;
+@brand-sidebar-hamburger-icon				    :	@brand-yellow-variant2;
+@brand-sidebar-item-color				        :	@white;
+
+//buttons
+@brand-button-primary-bg                : @brand-primary-color;
+@brand-button-primary-text              : @white;
+@brand-button-info-bg                   : #CCEBFF;
+@brand-button-info-text                 : @white;
+@brand-button-success-bg                : @brand-success-special-color;
+@brand-button-success-text              : @white;
+@brand-button-warning-bg                : @brand-warning-color;
+@brand-button-warning-text              : @white;
+@brand-button-danger-bg                 : @brand-danger-color;
+@brand-button-danger-text               : @white;
+
+//panels
+@brand-primary-panel-header-bg          :@brand-primary-color;
+@brand-info-panel-header-bg             :@brand-info-color;
+@brand-success-panel-header-bg          :@brand-success-color;
+@brand-warning-panel-header-bg          :@brand-warning-color;
+@brand-danger-panel-header-bg           :@brand-danger-color;
+
+//input
+@brand-input-validation-error           :@brand-danger-color;
+@brand-input-validation-error2          :@brand-danger-color2;
+
+
+@brand-white-card-bg                    :  @white;
+@brand-white-card-title                 :  @brand-blue-variant3;
+@brand-white-card-text                  : #666;
+
+@brand-primary-card-bg                  :  @brand-blue-variant4;
+@brand-primary-card-bg-image            :  linear-gradient(-135deg, #738EFC  0%, #516FE4  100%);
+@brand-primary-card-text                : rgba(255,255,255,.65);
+
+@brand-success-card-bg                  :   @brand-green-variant1;
+@brand-success-card-text                : rgba(255,255,255,.65);;
+
+@brand-info-card-bg                     :   @brand-blue-variant3;
+@brand-info-card-text                   : rgba(255,255,255,.65);
+
+@brand-danger-card-bg                   :   @brand-red-variant1;
+@brand-danger-card-text                 : rgba(255,255,255,.65);
+
+@brand-warning-card-bg                  :   @brand-yellow-variant1;
+@brand-warning-card-text                : rgba(255,255,255,.65);
+
+@brand-success-toastr-bg                :   @brand-green-variant2;
+@brand-danger-toastr-bg                	:   @brand-red-variant1;
+
+/*
+ * ===============================================================
+ *   <COLOR PALLETE>
+ * ===============================================================
+*/
+
+.text-white-base {
+	color: @white!important
+}
+
+.bg-white-base {
+	background: @white;
+}
+.text-yellow-variant1{
+  color: @brand-yellow-variant1;
+}
+
+.bg-yellow-variant1{
+  background-color: @brand-yellow-variant1;
+}
+.text-blue-variant1{
+  color: @brand-blue-variant1;
+}
+
+.bg-blue-variant1{
+  background-color: @brand-blue-variant1!important;
+}
+
+.text-blue-variant2{
+  color: @brand-blue-variant2!important;
+}
+
+.bg-blue-variant2{
+  background-color: @brand-blue-variant2;
+}
+
+.text-blue-variant3{
+  color: @brand-info-color!important;
+}
+
+.bg-blue-variant3{
+  background-color: @brand-info-color;
+}
+
+.text-grey-variant2 {
+	color: @brand-grey-variant2;
+}
+
+.bg-grey-variant2 {
+	background-color: @brand-grey-variant2!important;
+}
+
+.text-green-variant1 {
+	color: @brand-green-variant1;
+}
+
+.bg-green-variant1 {
+	background-color: @brand-green-variant1;
+}
+
+.text-green-variant2{
+  color: @brand-green-variant2;
+}
+.bg-green-variant2 {
+	background-color: @brand-green-variant2;
+}
+
+.text-red-variant1 {
+	color: @brand-red-variant1;
+}
+
+.bg-red-variant1 {
+	background-color: @brand-red-variant1;
+}
+
+@disabled-bg-color: #ccc;
+
+@brand-button-success-hover-bg: #acd666;
+@brand-button-success-focused-bg: #e3f1cc;
+@brand-button-success-pressed-bg: #538c31;
+@brand-button-success-disabled-bg: @disabled-bg-color;
+
+@brand-button-primary-hover-bg: #7D92BC;
+@brand-button-primary-focused-bg: @brand-blue-variant1;
+@brand-button-primary-pressed-bg: #1e3056;
+@brand-button-primary-disabled-bg: @disabled-bg-color;
+
+@brand-button-info-hover-bg: #F4F4F4,;
+@brand-button-info-focused-bg: @white;
+@brand-button-info-pressed-bg: #999999;
+@brand-button-info-disabled-bg: @disabled-bg-color;
+
+@brand-button-warning-hover-bg: @brand-orange-variant2;
+@brand-button-warning-focused-bg: @brand-orange-variant1;
+@brand-button-warning-pressed-bg: #c74a1b;
+@brand-button-warning-disabled-bg: @disabled-bg-color;
+
+@box-shadow-normal: 1px 1px 4px rgba(0,0,0,0.15);
+@box-shadow-hover: 1px 1px 4px rgba(0,0,0,0.30);
+@box-shadow-focused: 1px 1px 4px rgba(0,0,0,0.15);
+@box-shadow-pressed: 1px 1px 4px rgba(0,0,0,0.30);
+@box-shadow-disabled: none;
+
+@border-radius: 3px;

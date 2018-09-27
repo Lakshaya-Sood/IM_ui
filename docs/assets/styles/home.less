@@ -1,0 +1,37 @@
+html,body {
+	overflow: hidden;
+}
+.dashboard-page {
+    background: @brand-main-background;
+    color: @brand-body-color;
+    .main {
+      z-index: 1298;
+      padding: 2em;
+      position: absolute;
+      top: 0; 
+      bottom: 0;
+      left: 80px;
+      right:0;
+      overflow-x: hidden;
+      overflow-y: auto;
+      transition: all 450ms;
+    }
+    .slide-body {
+      left:240px;
+    }
+    @media (min-width: 768px) {
+      .main {
+        padding: 2em;
+      }
+   
+    }
+}
+
+
+.ui-view {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}

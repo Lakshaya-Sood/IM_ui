@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700');
+@import '~bootstrap/dist/css/bootstrap.css';
+@import "variables.less";
+@import "home.less";
+@import '../../lib/prism.css';
+
+html,body {
+    font-size: 100%;
+    overflow: hidden;
+    font-family: Lato, sans-serif!important;
+  }
+  
+  body {
+    color: @brand-body-color;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+    font-style: normal;
+  }
+  //overrides for header tags
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato',sans-serif;
+    color: #1a3b7a;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 0;
+    margin-bottom:0;
+  }
+  h1 {
+    /*Headline Monster*/
+    font-size: 3em;
+    line-height: 57px;
+  }
+  h2 {
+    /*Headline large*/
+    font-size: 2em;
+    line-height: 38px;
+  }
+  h3 {
+    /*Headline regular*/
+    font-size: 1.500em;
+    line-height: 28px;
+  }
+  h4 {
+    /*Headline small*/
+    font-size: 1.250em;
+    line-height: 24px;
+  }
+  h5 {
+    /*Text flow*/
+    font-size: 1em;
+    line-height: 19px;
+  }
+  h6 {
+    /*Small Text*/
+    font-size: 0.813em;
+    line-height: 15px;
+  }

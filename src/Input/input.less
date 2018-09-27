@@ -1,0 +1,193 @@
+.validation-error {
+  color: @brand-input-validation-error!important;
+}
+
+.fui-input-label {
+    font-weight: normal;
+    color: #002D72;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.fui-form-control {
+  color: #35445B!important;
+  height: 40px!important;
+  line-height: 22px!important;
+  font-size: 16px!important;
+  border: 1px solid #ffffff!important;
+  box-shadow: 0 0 0 1px #ccd0d6!important;
+  border-radius: 2px!important;
+  font-size: 16px!important;
+}
+
+.fui-form-control:focus {
+  border: 1px solid #63A0FF!important;
+  box-shadow: 0 0 0 1px #63A0FF!important;
+}
+// jp(11/7/2017) .m-input* are taken from
+// https://uxhub.metro-group.com/document/4#/metro-foundation-css/enabling-core-consistency-across-web-based-metro-products
+.m-input {
+  margin-bottom: 1.5rem
+}
+
+.m-input::-webkit-input-placeholder {
+  color: #667284
+}
+
+.m-input::-moz-placeholder {
+  color: #667284
+}
+
+.m-input:-ms-input-placeholder {
+  color: #667284
+}
+
+.m-input:-moz-placeholder {
+  color: #667284
+}
+
+.m-input-elementWrapper {
+  position: relative
+}
+
+.m-input-element {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  border: 1px solid #fff;
+  box-shadow: 0 0 0 1px #ccd0d6;
+  font-size: 1rem;
+  font-family: inherit;
+  padding: 0 .75rem;
+  height: 2.5rem;
+  color: #001432;
+  border-radius: 2px;
+  transition: .125s ease-in-out 0s;
+  transition-property: border-color
+}
+
+.m-input-element:focus {
+  color: #33435b;
+  outline: none;
+  border: 1px solid #66a2fe;
+  box-shadow: 0 0 0 1px #66a2fe
+}
+
+.m-input-element:disabled {
+  pointer-events: none;
+  color: #99a1ad;
+  background-color: #f2f3f5;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 1px #ccd0d6!important
+}
+
+.m-input-element:before {
+  content: ""
+}
+
+.m-input-element[aria-readonly=true] {
+  padding-left: 2rem;
+  background-color: #f2f3f5;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 1px #ccd0d6
+}
+
+.m-input-element.m-input-isValid {
+  border: 1px solid #85d9b4;
+  box-shadow: 0 0 0 1px #85d9b4
+}
+
+.m-input-element.m-input-hasError,
+.m-input-element.m-input-hasWarning {
+  border: 1px solid #eb8676;
+  box-shadow: 0 0 0 1px #eb8676
+}
+
+.m-input input[type=search] {
+  -webkit-appearance: textfield
+}
+
+.m-input input[type=search]::-webkit-search-cancel-button,
+.m-input input[type=search]::-webkit-search-decoration,
+.m-input input[type=search]::-webkit-search-results-button,
+.m-input input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none
+}
+
+.m-input input::-ms-clear,
+.m-input input::-ms-reveal {
+  display: none
+}
+
+.m-input textarea {
+  overflow: auto;
+  resize: vertical;
+  width: 100%;
+  min-height: 10rem;
+  padding-top: 1rem
+}
+
+.m-input-errorMessage {
+  display: block;
+  visibility: visible;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  margin-top: .375rem;
+  color: #de351b
+}
+
+.m-input-passwordToggle,
+.m-input-search {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 2.5rem;
+  color: #33435b
+}
+
+.m-input-passwordToggle:focus,
+.m-input-search:focus {
+  outline: 0 none
+}
+
+.m-input-search {
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-top: .375rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #3383fe
+}
+
+.m-input-readOnlyIcon {
+  position: absolute;
+  top: 0;
+  left: .5rem;
+  height: 2.5rem;
+  width: 1rem;
+  color: #99a1ad
+}
+
+.m-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+
+.m-checkbox-label {
+  font-size: 1rem;
+  line-height: 1.375rem;
+  color: #33435b;
+  margin-left: 0.75rem;
+}

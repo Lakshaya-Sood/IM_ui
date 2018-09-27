@@ -1,0 +1,2 @@
+## CONTRIBUTION GUIDELINES
+Coming soon :-)

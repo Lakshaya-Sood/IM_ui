@@ -1,0 +1,213 @@
+@import "variables.less";
+@import "colors.less";
+@import "./Button/button.less";
+@import "./Datepicker/datepicker.less";
+@import "./Input/input.less";
+@import "./AppHeader.Secondary/appHeader.less";
+@import "./Sidebar/sidebar.less";
+@import "./Panel/panel.less";
+@import "./MultiSelect/multiselect.less";
+@import "./SnackBar/snackbar.less";
+@import "./Autocomplete/autocomplete.less";
+
+a {
+	text-decoration: none!important;
+}
+
+.no-borders{
+	border: none!important;
+	border-radius: 0;
+}
+
+/*TYPOGRAPHY*/
+/*.font-light {
+	font-weight: 100;
+}*/
+.font-thin {
+	font-weight: 300;
+}
+.text-base {
+	color: #666!important;
+}
+.text-muted {
+    color: #818a91!important;
+}
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+/*
+ * =============================================================================
+ *   <CURSOR>
+ * =============================================================================
+*/
+
+.fui-clickable {
+	cursor: pointer;
+}
+
+/*
+ * =============================================================================
+ *   <SPACING>
+ * =============================================================================
+*/
+.m-t-0 {
+	margin-top: 0!important;
+}
+.m-b-75, .margin-bottom-75{
+    margin-bottom: .75rem;
+}
+.no-margins {
+	margin: 0!important;
+}
+.text-group-item {
+	display: inline-block;
+	margin: .75rem;
+}
+/*
+ * =============================================================================
+ *   <BOOTSTRAP CARD STYLES>
+ * =============================================================================
+*/
+.card {
+    position: relative;
+    display: block;
+    margin-bottom: .75rem;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: .25rem;
+    height: auto;
+}
+.card-header {
+    padding: .75rem 1.25rem;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e5e5e5;
+}
+.card-block {
+    padding: 1.25rem;
+}
+.card-title {
+    margin-bottom: .75rem;
+}
+.card-footer:last-child {
+    border-radius: 0 0 .25rem .25rem;
+}
+.card-footer {
+    padding: .75rem 1.25rem!important;
+    /*margin-bottom: -8px;*/
+    background-color: @card-footer-bg;
+    border-top: 1px solid #e5e5e5;
+}
+.no-borders{
+	border: 0!important;
+	border-radius: 0!important;
+}
+/*
+ * =============================================================================
+ *   <CARD STYLES>
+ * =============================================================================
+*/
+
+.mdg-card-margin-bottom {
+	margin-bottom: .75rem;
+}
+
+.card-success-brand {
+	background-color: @brand-success-card-bg!important;
+	.title {
+		color: @white!important;
+	}
+	.card-text {
+		color: rgba(255,255,255,.65);;
+
+	}
+}
+.card-white-brand {
+	background-color: @brand-white-card-bg!important;
+	.title {
+		color: @brand-white-card-title !important;
+	}
+	.card-text {
+		color: @brand-white-card-text!important;
+
+	}
+}
+
+.card-info-brand {
+	background-color: @brand-info-card-bg!important;
+	.title {
+		color: @white!important;
+	}
+	.card-text {
+		color: @brand-info-card-text!important;
+
+	}
+}
+.card-primary-brand {
+	background-color: @brand-primary-card-bg;
+	background-image :@brand-primary-card-bg-image;
+	.title {
+		color: @white!important;
+	}
+	.card-text {
+		color: @brand-primary-card-text!important;
+
+	}
+}
+.card-danger-brand {
+	background-color: @brand-danger-card-bg!important;
+	.title {
+		color: @white!important;
+	}
+	.card-text {
+		color: @brand-danger-card-text!important;
+
+	}
+}
+.card-warning-brand {
+	background-color: @brand-warning-card-bg!important;
+	.title {
+		color: @white!important;
+	}
+	.card-text {
+		color: @brand-warning-card-text!important;
+
+	}
+}
+.card-success-special-brand {
+	background-image: linear-gradient(-135deg, #86D600 0%, #74BA00 100%);
+	background-color: #74BA00;
+	.title {
+		color: @white!important;
+	}
+	.card-text {
+		color: rgba(255,255,255,.65);;
+
+	}
+}
+.card-warning-special-brand {
+	background-color: #ff5917!important;
+	.title {
+		color: @white!important;
+	}
+	.card-text {
+		color: @brand-warning-card-text!important;
+
+	}
+}
+.toastr-notification {
+    top: 58px;
+    bottom: inherit!important;
+    transform: translate(50px, 20px);
+}
+.requiredMark >label:after {
+  content: '*';
+ color: @red;
+}
+label.requiredMark::after {
+  content: '*';
+ color: @red;
+}

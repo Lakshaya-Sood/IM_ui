@@ -1,0 +1,402 @@
+/*
+ * =============================================================================
+ *   <FUI BUTTONS>
+ * =============================================================================
+*/
+
+.fui-btn{
+    .fui-btn-primary& {
+        button {
+            background-color: @brand-button-primary-bg!important;
+            
+            span {
+                color: @white !important;
+            }
+        }
+    }
+    .fui-btn-info&{
+        button {
+            background-color: @brand-button-info-bg!important;
+            
+            span {
+                color: @brand-blue-variant1 !important;
+            }
+        }
+    }
+    .fui-btn-success&{
+        button {
+            background-color: @brand-button-success-bg!important;
+            background-image: linear-gradient(-135deg, #86D600 0%, #74BA00 100%);
+            
+            span {
+                color: @white !important;
+            }
+        }
+    }
+    .fui-btn-warning&{
+        button {
+            background-color: @brand-button-warning-bg!important;
+            
+            span {
+                color: @white !important;
+            }
+        }
+    }
+
+    .fui-btn-danger&{
+        button {
+            background-color: @brand-button-danger-bg!important;
+            
+            span {
+                color: @white !important;
+            }
+        }
+    }   
+    & + .fui-btn {
+        margin-left: 1em;
+    }
+}
+
+/*
+ * =============================================================================
+ *  <FLAT BUTTONS>
+ * =============================================================================
+*/
+@border-color: #ccc;
+@border-radius: 3px;
+
+button.fui-btn, button.fab-btn {
+    span {
+        font-weight: 400 !important;
+        text-transform: capitalize !important;
+    }
+}
+
+button.fui-btn-info.fui-flat-btn, button.fab-btn-info.fui-flat-btn {
+    border-radius: @border-radius !important;
+    box-shadow: none !important;
+
+    div svg {
+        fill: @brand-blue-variant3 !important;
+    }
+    span {
+        color: @brand-blue-variant3 !important;
+        padding-left: 5px !important;
+    }        
+    &:hover {
+        background: @brand-button-info-hover-bg !important;
+        box-shadow: @box-shadow-hover !important;
+    }
+    // &:focus {
+    //     background: @white !important;
+    //     border: 1px solid @border-color;
+    //     border-radius: @border-radius !important;
+    // }
+    &[disabled] {
+        box-shadow: none !important;
+        background: @border-color !important;
+
+        span {
+            color: @white !important;
+        }
+    }
+}
+
+
+/*
+ * =============================================================================
+ *  <CARL, VINCE, ISSAC BUTTONS with small, basic, large and extra-large>
+ * =============================================================================
+*/
+
+.fab-btn {
+    border-radius: @border-radius !important;
+
+    span {
+        color: @white !important;
+        text-transform: capitalize !important;
+    }
+    &.fab-btn-info {     
+        button {
+            background: @brand-button-info-bg !important;
+
+            &:hover {
+                background:#66C2FF !important;
+                box-shadow: @box-shadow-hover !important;
+                color: @brand-blue-variant1 !important;
+            }
+            
+            // &:focus {
+            //     background: @brand-button-primary-hover-bg !important;
+            //     border: 2px solid @brand-blue-variant1 !important;
+            //     border-radius: @border-radius !important;
+            //     box-shadow: @box-shadow-focused !important;
+            // }
+                    
+            &:active {
+                background: @brand-blue-variant1 !important;
+                border-radius: @border-radius !important;
+                box-shadow: @box-shadow-pressed !important;
+
+                span {
+                    color: @white !important;
+                }
+            }
+
+            &[disabled] {
+                background: @disabled-bg-color !important;
+                box-shadow: @box-shadow-disabled !important;
+            }
+        }       
+        span {
+            color: @brand-blue-variant1 !important;
+        }           
+        div svg {
+            fill: @brand-blue-variant1 !important;
+        }
+    }   
+    button {
+        div {            
+            svg {
+                fill: @white !important;
+
+                &+ span {
+                    padding-left: 4px !important;
+                }
+            }
+        }
+    }
+}
+.fab-btn-success {
+    button {
+        background: @brand-success-special-color !important;
+
+        &:hover {
+            background: @brand-button-success-hover-bg !important;
+            box-shadow: @box-shadow-hover !important;
+        }
+        
+        // &:focus {
+        //     background: @brand-button-success-focused-bg !important;
+        //     border: 2px solid #538C31 !important;
+        //     box-shadow: @box-shadow-focused !important;
+        // }
+
+                
+        &:active {
+            background: @brand-button-success-pressed-bg !important;
+            box-shadow: @box-shadow-pressed !important;
+        }
+
+        &[disabled] {
+            background: @brand-button-success-disabled-bg !important;
+            box-shadow: @box-shadow-disabled !important;
+        }
+    }
+}
+.fab-btn-primary {
+    button {
+        background: #0064FE !important;
+
+        &:hover {
+            background: #0064FE !important;
+            box-shadow: @box-shadow-hover !important;
+        }
+        
+        // &:focus {
+        //     background: @brand-button-warning-focused-bg !important;
+        //     border: 2px solid #7D92BC !important;
+        //     box-shadow: @box-shadow-focused !important;
+        // }
+                
+        &:active {
+            background: @brand-blue-variant2 !important;
+            box-shadow: @box-shadow-pressed !important;
+        }
+
+        &[disabled] {
+            background: @disabled-bg-color !important;
+            box-shadow: @box-shadow-disabled !important;
+        }
+    }
+}
+.fab-btn-warning {
+    button {
+        background: @brand-danger-color2 !important;
+
+        &:hover {
+            background: @brand-button-warning-hover-bg !important;
+            box-shadow: @box-shadow-hover !important;
+        }
+        
+        // &:focus {
+        //     background: @brand-button-warning-focused-bg !important;
+        //     border: 2px solid #7D92BC !important;
+        //     box-shadow: @box-shadow-focused !important;
+        // }
+                
+        &:active {
+            background: @brand-button-warning-pressed-bg !important;
+            box-shadow: @box-shadow-pressed !important;
+        }
+
+        &[disabled] {
+            background: @brand-button-warning-disabled-bg !important;
+            box-shadow: @box-shadow-disabled !important;
+        }
+    }
+}
+.fab-btn-info {
+    button {
+        background: @brand-button-info-bg !important;
+
+        &:hover {
+            background: @brand-button-info-hover-bg !important;
+            box-shadow: @box-shadow-hover !important;
+        }
+        
+        // &:focus {
+        //     background: @brand-button-info-focused-bg !important;
+        //     border: 2px solid @brand-button-info-disabled-bg !important;
+        // }
+                
+        &:active {
+            background: @brand-button-info-pressed-bg !important;
+            box-shadow: @box-shadow-pressed !important;
+        }
+
+        &[disabled] {
+            background: @brand-button-info-disabled-bg !important;
+            box-shadow: @box-shadow-disabled !important;
+        }
+    }
+}
+.fab-btn-ghost {
+    box-shadow: none!important;
+    button {
+        span {
+            color: #0064fe!important;
+            text-decoration: underline!important;
+            font-weight: normal!important;
+        }
+        background: transparent!important;
+
+        &:hover {
+            background-color: rgba(0, 100, 254, 0.05)!important;
+            text-decoration: underline!important;
+        }
+        
+        // &:focus {
+        //     background: @brand-button-info-focused-bg !important;
+        //     border: 2px solid @brand-button-info-disabled-bg !important;
+        // }
+                
+        &:active {
+            box-shadow: @box-shadow-pressed !important;
+            background-color: rgba(0, 100, 254, 0.05)!important;
+            text-decoration: underline!important;
+        }
+
+        &[disabled] {
+            background: @brand-button-info-disabled-bg !important;
+            box-shadow: @box-shadow-disabled !important;
+        }
+    }
+}
+
+.fab-btn-small {
+    min-width: 64px !important;
+
+    button {
+        height: 32px !important;
+        line-height: 32px !important;
+
+        div {
+            height: 32px !important;
+
+            svg {
+                height: 16px !important;
+                width: 16px !important;
+            }
+
+            span {            
+                font-size: 13px !important;
+                padding-left: 12px !important;
+                padding-right: 12px !important;
+            }
+        }
+    }
+}
+.fab-btn-basic {
+    min-width: 80px !important;
+
+    button {
+        height: 40px !important;
+        line-height: 40px !important;
+
+        div {
+            height: 40px !important;
+
+            svg {
+                height: 24px !important;
+                width: 24px !important;
+            }
+
+            span {            
+                font-size: 16px !important;
+                padding-left: 16px !important;
+                padding-right: 16px !important;
+            }
+        }
+    }
+}
+.fab-btn-large {
+    min-width: 96px !important;
+
+    button {
+        height: 48px !important;
+        line-height: 48px !important;
+
+        div {
+            height: 48px !important;
+
+            svg {
+                height: 24px !important;
+                width: 24px !important;
+            }
+
+            span {            
+                font-size: 16px !important;
+                padding-left: 32px !important;
+                padding-right: 32px !important;
+            }
+        }
+    }
+}
+.fab-btn-extra-large {
+    min-width: 96px !important;
+
+    button {
+        height: 56px !important;
+        line-height: 56px !important;
+
+        div {
+            height: 56px !important;
+
+            svg {
+                height: 32px !important;
+                width: 32px !important;
+            }
+
+            span {            
+                font-size: 20px !important;
+                padding-left: 32px !important;
+                padding-right: 32px !important;
+            }
+        }
+    }
+}
+
+
+
+
